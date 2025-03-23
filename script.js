@@ -8,5 +8,5 @@ function handleForgetPassword() {
   console.log("Handle Forget password");
 }
 function handleLogin() {
-  window.location.href = "../index.html";
+  window.location.href = "./index.html";
 }
