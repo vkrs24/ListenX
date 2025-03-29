@@ -1,5 +1,5 @@
 body {
-  background-color: #a12a95;
+  background-color: #e23f2b;
 }
 /* SignIn section starts */
 
@@ -35,9 +35,14 @@ body {
 }
 
 .SignUp_Box .App_logo h1 {
-  font-size: 2.5rem;
-  color: #d230ba;
+  font-size: 240%;
+  color: #e23f2b;
+  font-family: sans-serif;
   margin-left: 0.5vw;
+}
+
+.SignUp_Box .App_logo h1 span {
+  color: #000000;
 }
 
 form {
@@ -58,7 +63,7 @@ form {
   margin: 1vh 0;
   border-radius: 5px;
   box-sizing: border-box;
-  background-color: #edecec; /* Prevents unwanted overflow */
+  background-color: #a89b9923; /* Prevents unwanted overflow */
 }
 
 .SignUp_Btn {
@@ -70,7 +75,7 @@ form {
   margin: 1vh 0;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #d230ba;
+  background-color: #e23f2b;
   transition: opacity 0.3s;
 }
 
@@ -80,12 +85,12 @@ form {
 
 .SignUp_Box a {
   font-size: 1rem;
-  color: #a12a95;
+  color: #e23f2b;
   text-decoration: none;
   transition: color 0.5s;
 }
 .SignUp_Box a:hover {
-  color: #a12a958d;
+  color: #e23f2b;
 }
 
 .SignUp_Box_Link {
@@ -95,21 +100,21 @@ form {
 .SignUp_Box_Link p,
 .SignUp_Box_Link p a {
   font-size: 1rem;
-  color: #a12a95;
+  color: #e23f2b;
   text-decoration: none;
   margin: 1vh 0;
 }
 
 .SignUp_Box_Link p a {
   font-size: 1rem;
-  color: #a12a95;
+  color: #e23f2b;
   font-weight: bold;
   transition: color 0.5s;
   cursor: pointer;
 }
 
 .SignUp_Box_Link p a:hover {
-  color: #a12a958d;
+  color: #e2402b73;
 }
 
 /* SignUp section ends */

@@ -1,5 +1,5 @@
 body {
-  background-color: #a12a95;
+  background-color: #e23f2b;
 }
 
 /* LogIn section starts */
@@ -37,9 +37,14 @@ body {
 }
 
 .LogIn_Box .App_logo h1 {
-  font-size: 250%;
-  color: #d230ba;
+  font-size: 240%;
+  color: #e23f2b;
+  font-family: sans-serif;
   margin-left: 0.5vw;
+}
+
+.LogIn_Box .App_logo h1 span {
+  color: #000000;
 }
 
 form {
@@ -56,7 +61,7 @@ form {
   border: none;
   font-size: 1rem; /* Fixed unit */
   border-radius: 5px;
-  background-color: #edecec;
+  background-color: #a89b9923;
 }
 
 .Login_Btn {
@@ -67,7 +72,7 @@ form {
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #d230ba;
+  background-color: #e23f2b;
   transition: opacity 0.3s; /* Improved hover effect */
 }
 
@@ -82,19 +87,19 @@ form {
 .LogIn_Box a {
   font-size: 1rem;
   cursor: pointer;
-  color: #a12a95;
+  color: #e23f2b;
   text-decoration: none;
   transition: color 0.5s;
 }
 
 .LogIn_Box a:hover {
-  color: #a12a958d;
+  color: #e23f2b;
 }
 
 .LogIn_Box_Link p,
 .LogIn_Box_Link p a {
   font-size: 1rem;
-  color: #a12a95;
+  color: #e23f2b;
   text-decoration: none;
   margin-top: 1vh;
   margin-bottom: 1vh;
@@ -102,13 +107,13 @@ form {
 
 .LogIn_Box_Link p a {
   font-size: 1rem;
-  color: #a12a95;
+  color: #e23f2b;
   cursor: pointer;
   font-weight: bold;
   transition: color 0.5s;
 }
 .LogIn_Box_Link p a:hover {
-  color: #a12a958d;
+  color: #e2402b91;
 }
 
 /* LogIn section ends */
