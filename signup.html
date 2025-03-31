@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/listen-high-resolution-logo.png" type="favcon">
+    <link rel="stylesheet" href="./styles/signup.css">
+    <title>Signup</title>
+</head>
+
+<body>
+    <div class="Sign_Up_Container">
+        <div class="SignUp_Box">
+            <div class="App_logo">
+                <img src="./images/listen-high-resolution-logo.png" alt="logo" />
+                <h1>Listen<span>X</span></h1>
+            </div>
+            <div>
+                <form onsubmit="handleSignUpValidation(event)">
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name" onChange="" required />
+
+                    <input type="text" name="username" id="username" placeholder="Username" onChange="" required />
+
+                    <input type="email" name="email" id="email" placeholder="Email" onChange="" required />
+
+                    <input type="password" name="password" id="password" placeholder="Password" onChange="" required />
+
+                    <button type="submit" class="SignUp_Btn">
+                        Sign up
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="SignUp_Box_Link">
+            <div>
+                <p>
+                    Already have an account?
+                    <a onclick="handleLogin()"> Log in</Link>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>

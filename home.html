@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/listen-high-resolution-logo.png" type="image/png">
+    <link rel="stylesheet" href="./styles/home.css">
+    <title>ListenX</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header_section">
+            <div class="logo">
+                <img src="./images/listen-high-resolution-logo.png" alt="ListenX Logo">
+            </div>
+            <div class="search_bar">
+                <input type="search" placeholder="Artist, Album, Songs..." id="keyword">
+                <button onclick="songsearch()">
+                    <img src="./images/search.png" alt="Search Icon">
+                </button>
+            </div>
+        </div>
+        <div class="content_section">
+            <div class="song_list">
+                <!-- Display Songs -->
+            </div>
+        </div>
+        <div class="play_section">
+            <audio class="song" src="I-Wanna-Be-Yours.mp3" hidden controls></audio>
+            <div class="controls">
+                <div class="album_thumbnail">
+                    <img id="play_thumbnail" src="./images/Screenshot 2025-03-29 134933.png" alt="Album Thumbnail">
+                </div>
+                <div class="name">
+                    <div id="play_song" class="song_name">© 2025 Vasanthakumar Durai | Crafted with ❤️ & ☕</div>
+                    <div id="play_artist" class="artist_name">Engineer</div>
+                </div>
+                <div>
+                    <img class="play_pause" src="./images/play-button-arrowhead.png" alt="Play/Pause">
+                </div>
+            </div>
+            <input type="range" id="progress" class="seekbar" min="0" step="1" value="0"
+                oninput="seekTrack(this.value)">
+        </div>
+    </div>
+    <script src=" ./home.js"></script>
+</body>
+
+</html>

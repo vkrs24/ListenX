@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header Section Starts */
+
+.header_section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e23f2b;
+  position: fixed;
+  top: 0;
+}
+
+.logo {
+  width: 8rem;
+  height: 5rem;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.search_bar {
+  display: flex;
+  align-items: center;
+}
+
+.search_bar input {
+  max-width: 15rem;
+  padding: 0.5rem 0.5rem;
+  border: solid none;
+}
+
+.search_bar img {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: aliceblue;
+  border-radius: 3px;
+  border: none;
+  padding: 0.1rem;
+}
+
+.search_bar button {
+  background-color: aliceblue;
+  border: none;
+}
+
+.search_bar button:hover {
+  box-shadow: 0 0 5px rgb(52, 40, 40);
+  cursor: pointer;
+}
+
+/* Header Section Ends */
+
+/* Play Section Starts */
+
+.play_section {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  background-color: aliceblue;
+  width: 98%;
+  padding: 0.5rem 0.9rem 0.5rem 0.8rem;
+}
+
+#progress {
+  width: 100%;
+  appearance: none;
+  height: 0.3rem;
+  background: #e23f2b;
+  cursor: pointer;
+}
+
+#progress::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000000;
+}
+
+.controls,
+.song_box {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content_section {
+  width: 100%;
+  position: fixed;
+  top: 11.7vh;
+  bottom: 11.3vh;
+  background-color: rgb(26, 27, 27);
+  display: flex;
+  justify-content: center;
+}
+
+.song_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-y: scroll;
+  background-color: rgb(40, 33, 33);
+}
+.song_box {
+  min-width: 30%;
+  padding: 0.28rem 0.5rem 0 0.5rem;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  border-radius: 5px;
+}
+
+.controls img {
+  width: 1.2rem;
+  cursor: pointer;
+}
+.song_box img {
+  width: 1.2rem;
+  cursor: pointer;
+}
+
+.album_thumbnail img {
+  width: 3rem;
+}
+
+.name {
+  width: 70%;
+}
+
+.song_name {
+  font-weight: bold;
+}
+.artist_name {
+  font-size: 80%;
+}
+/* Play Section Ends */
+
+@media screen and (max-width: 762px) {
+  .song_box {
+    min-width: 90%;
+  }
+}

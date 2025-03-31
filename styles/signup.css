@@ -1,0 +1,174 @@
+body {
+  background-color: #e23f2b;
+}
+/* SignIn section starts */
+
+.Sign_Up_Container {
+  width: 100%;
+  min-height: 100vh; /* Prevent overflow issues */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.SignUp_Box,
+.SignUp_Box_Link {
+  width: 100%;
+  max-width: 300px;
+  padding: 2rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.App_logo {
+  display: flex;
+  align-items: center;
+}
+
+.SignUp_Box .App_logo img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.SignUp_Box .App_logo h1 {
+  font-size: 240%;
+  color: #e23f2b;
+  font-family: sans-serif;
+  margin-left: 0.5vw;
+}
+
+.SignUp_Box .App_logo h1 span {
+  color: #000000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#fullname,
+#email,
+#username,
+#password {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  margin: 1vh 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #a89b9923; /* Prevents unwanted overflow */
+}
+
+.SignUp_Btn {
+  width: 100%;
+  padding: 0.5rem;
+  color: #ffffff;
+  border: none;
+  font-size: 1rem;
+  margin: 1vh 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e23f2b;
+  transition: opacity 0.3s;
+}
+
+.SignUp_Btn:hover {
+  opacity: 0.6;
+}
+
+.SignUp_Box a {
+  font-size: 1rem;
+  color: #e23f2b;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.SignUp_Box a:hover {
+  color: #e23f2b;
+}
+
+.SignUp_Box_Link {
+  margin-top: 1vh;
+}
+
+.SignUp_Box_Link p,
+.SignUp_Box_Link p a {
+  font-size: 1rem;
+  color: #e23f2b;
+  text-decoration: none;
+  margin: 1vh 0;
+}
+
+.SignUp_Box_Link p a {
+  font-size: 1rem;
+  color: #e23f2b;
+  font-weight: bold;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+
+.SignUp_Box_Link p a:hover {
+  color: #e2402b73;
+}
+
+/* SignUp section ends */
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .Sign_Up_Container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .SignUp_Box,
+  .SignUp_Box_Link {
+    width: 100%;
+    max-width: 250px; /* Reduce width for smaller screens */
+    padding: 1.5rem;
+  }
+
+  .SignUp_Box .App_logo img {
+    width: 3rem;
+    height: 3rem; /* Slightly smaller for smaller screens */
+  }
+
+  .SignUp_Box .App_logo h1 {
+    font-size: 2rem;
+  }
+
+  #fullname,
+  #email,
+  #username,
+  #password {
+    width: 100%;
+  }
+
+  .SignUp_Btn {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .SignUp_Box a {
+    font-size: 0.9rem;
+  }
+
+  .SignUp_Box_Link p,
+  .SignUp_Box_Link p a {
+    font-size: 0.9rem;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  .SignUp_Box_Link p a {
+    font-size: 0.9rem;
+  }
+}

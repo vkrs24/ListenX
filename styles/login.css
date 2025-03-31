@@ -1,0 +1,178 @@
+body {
+  background-color: #e23f2b;
+}
+
+/* LogIn section starts */
+
+.LogIn_Container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.LogIn_Box,
+.LogIn_Box_Link {
+  width: 100%;
+  max-width: 250px;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  gap: 1rem; /* Improved spacing */
+}
+
+.App_logo {
+  display: flex;
+  align-items: center;
+}
+
+.LogIn_Box .App_logo img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.LogIn_Box .App_logo h1 {
+  font-size: 240%;
+  color: #e23f2b;
+  font-family: sans-serif;
+  margin-left: 0.5vw;
+}
+
+.LogIn_Box .App_logo h1 span {
+  color: #000000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* Improved spacing */
+}
+
+#email,
+#password {
+  width: 100%; /* Fixed responsiveness */
+  padding: 0.5rem;
+  border: none;
+  font-size: 1rem; /* Fixed unit */
+  border-radius: 5px;
+  background-color: #a89b9923;
+}
+
+.Login_Btn {
+  width: 100%;
+  padding: 0.5rem;
+  color: #ffffff;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e23f2b;
+  transition: opacity 0.3s; /* Improved hover effect */
+}
+
+.Login_Btn:hover {
+  opacity: 0.6;
+}
+
+.LogIn_Box_Link {
+  margin-top: 1vh;
+}
+
+.LogIn_Box a {
+  font-size: 1rem;
+  cursor: pointer;
+  color: #e23f2b;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.LogIn_Box a:hover {
+  color: #e23f2b;
+}
+
+.LogIn_Box_Link p,
+.LogIn_Box_Link p a {
+  font-size: 1rem;
+  color: #e23f2b;
+  text-decoration: none;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.LogIn_Box_Link p a {
+  font-size: 1rem;
+  color: #e23f2b;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.5s;
+}
+.LogIn_Box_Link p a:hover {
+  color: #e2402b91;
+}
+
+/* LogIn section ends */
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+  /* LogIn section starts */
+
+  .LogIn_Box,
+  .LogIn_Box_Link {
+    width: 100%;
+    max-width: 250px;
+    padding: 1rem 2rem;
+  }
+
+  .LogIn_Box .App_logo img {
+    width: 3rem;
+    height: 3rem; /* Slightly smaller for smaller screens */
+  }
+
+  .LogIn_Box .App_logo h1 {
+    font-size: 200%;
+    margin-left: 0.5vw;
+  }
+
+  #email,
+  #password {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+
+  .Login_Btn {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+  .LogIn_Box a {
+    font-size: 0.9rem; /* Responsive scaling */
+  }
+
+  .LogIn_Box_Link {
+    padding: 1.5rem 2rem;
+  }
+
+  .LogIn_Box_Link p,
+  .LogIn_Box_Link p a {
+    font-size: 0.9rem;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  .LogIn_Box_Link p a {
+    font-size: 0.9rem;
+  }
+
+  /* LogIn section ends */
+}
