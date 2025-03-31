@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function onloadsongs() {
     try {
-      const response = await fetch("http://127.0.0.1:8001/onload");
+      const response = await fetch(
+        "https://listenx-backend.onrender.com/onload"
+      );
       const data = await response.json();
       console.log(data);
       display(data);
@@ -23,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const search_word = document.getElementById("keyword").value;
     try {
       const response = await fetch(
-        `http://127.0.0.1:8001/search?q=${search_word}`
+        `https://listenx-backend.onrender.com/search?q=${search_word}`
       );
       const data = await response.json();
       console.log(data);
@@ -97,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const response = await fetch(
-        `http://127.0.0.1:8001/get_audio?video_id=${videoId}`
+        `https://listenx-backend.onrender.com/get_audio?video_id=${videoId}`
       );
       const data = await response.json();
 
