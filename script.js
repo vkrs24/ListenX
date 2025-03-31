@@ -7,5 +7,15 @@ function handleLogin() {
 
 function handleUserValidation(event) {
   event.preventDefault();
-  window.location.href = "./home.html";
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  if (email === "vasanth.vkrs@gmail.com" && password === "@12345") {
+    window.location.href = "./home.html";
+  } else {
+    alert("Wrong Credentials");
+  }
+}
+
+function handleLogin() {
+  alert("Sorry!, Server Error Try again later...");
 }
