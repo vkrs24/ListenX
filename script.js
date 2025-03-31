@@ -16,6 +16,7 @@ function handleUserValidation(event) {
   }
 }
 
-function handleLogin() {
+function handleLogin(event) {
+  event.preventDefault();
   alert("Sorry!, Server Error Try again later...");
 }
